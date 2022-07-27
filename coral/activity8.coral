@@ -1,0 +1,36 @@
+Function FindLCM(integer aVal, integer bVal) returns integer IcmVal 
+   IcmVal = AbsoluteValue(aVal * bVal)/ GCD(aVal,bVal)
+
+
+Function GCD( integer aVal, integer bVal) returns integer gcdVal
+   integer numA
+   integer numB
+   integer godVal
+  
+   numA = aVal
+   numB = bVal
+   //Euclid's algorithim
+   while numA!= numB
+      if numB>numA
+         numB = numB - numA
+      else 
+         numA = numA - numB
+   
+   godVal = numA
+
+      
+
+Function Main() returns nothing 
+   integer usrNumA
+   integer usrNumB
+   integer IcmResult
+   
+   usrNumA = Get next input
+   usrNumB = Get next input
+   IcmResult = FindLCM(usrNumA, usrNumB)
+   Put " Least common multiple of" to output
+   Put usrNumA to output
+   Put " and " to output
+   Put usrNumB to output
+   Put "is" to output
+   Put IcmResult to output
